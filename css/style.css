@@ -286,6 +286,7 @@ input[type=text], select, textarea {
     column-gap: 30px;
     row-gap: 20px;
     grid-template-areas: "header header" "desc1 desc2" "desc2 desc3" "footer footer";
+    
   }
   
   #desc1  , #desc2
@@ -312,4 +313,19 @@ input[type=text], select, textarea {
   
 
   }
+  }
+
+  /* animacion */
+  @keyframes nav {
+    From  {background-color: lightcoral;}
+    to {background-color: skyblue;}
+    
+  }
+  
+  /* elemento de animacion */
+  #nav {
+    background-color: red;
+    animation-name: nav;
+    animation-duration: 4s;
+   
   }
