@@ -140,22 +140,8 @@ input[type=text], select, textarea {
   height: auto;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: lightblue;
-}
 
-.container:hover .overlay {
-  opacity: 1;
-}
+
 
 .text {
   color: black;
@@ -175,145 +161,8 @@ input[type=text], select, textarea {
 
 }
 
-@media screen and (min-width: 320px) {
-
-  header {
-    grid-area: header;
-  }
-  
-  footer {
-    grid-area: footer;
-  }
-  
-  section #sectpadr {
-    grid-area: sectpadr;
-  }
-  
-  article #desc1 {
-    grid-area: desc1;
-  }
-  
-  article #desc2 {
-    grid-area: desc2;
-  }
-  
-  article #desc3 {
-    grid-area: desc3;
-  }
-  
-  
-  #sectpadr {
-    display: grid;
-    grid-template-columns: 100%  ;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    column-gap: 30px;
-    row-gap: 20px;
-    grid-template-areas: "header" "desc1 " "desc2 " "desc3" "footer";
-  }
-  
-  #desc1  , #desc2
-  #desc3 {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-items: stretch;
-    align-items: stretch;
-    justify-self: end;
-    align-self: start;
-  }
 
 
-}
-
-@media screen and (min-width: 1200px) {
-
-  header {
-    grid-area: header;
-  }
-  
-  footer {
-    grid-area: footer;
-  }
-  
-  section #sectpadr {
-    grid-area: sectpadr;
-  }
-  
-  article #desc1 {
-    grid-area: desc1;
-  }
-  
-  article #desc2 {
-    grid-area: desc2;
-  }
-  
-  article #desc3 {
-    grid-area: desc3;
-  }
-
-  section #sectserv {
-    grid-area: sectpadr;
-  }
-  article #servtab {
-    grid-area: servtab;
-  }
-  article #servimg {
-    grid-area: servimg;
-  }
-
-
-
-
-  body{
-    grid-area: body;
-  }
-  
-  #sectserv {
-    display: grid;
-    grid-template-columns: 40%  60%;
-    grid-template-rows: 30% 50% 20%;
-    column-gap: 30px;
-    row-gap: 20px;
-    grid-template-areas: "header header" "servtab sectserv" "footer footer";
-  }
-  
-  #sectpadr {
-    display: grid;
-    grid-template-columns: 70%  30%;
-    grid-template-rows: 25%  25% 25% 25%;
-    column-gap: 30px;
-    row-gap: 20px;
-    grid-template-areas: "header header" "desc1 desc2" "desc2 desc3" "footer footer";
-    
-  }
-  
-  #desc1  , #desc2
-  #desc3 {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-items: stretch;
-    align-items: stretch;
-    justify-self: end;
-    align-self: start;
-  }
-
-
-  #servtab  , #servimg
-   {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-  
-    justify-items: stretch;
-    align-items: stretch;
-  
-
-  }
-  }
 
   /* animacion */
   @keyframes nav {
@@ -324,7 +173,7 @@ input[type=text], select, textarea {
   
   /* elemento de animacion */
   #nav {
-    background-color: red;
+    background-color: skyblue;
     animation-name: nav;
     animation-duration: 4s;
    
