@@ -1,0 +1,26 @@
+{
+  "name": "cacycweb",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas18991/ProyectoCH.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Lucas Lopez Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas18991/ProyectoCH/issues"
+  },
+  "homepage": "https://github.com/Lucas18991/ProyectoCH#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

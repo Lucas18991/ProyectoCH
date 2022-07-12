@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Media\img\faviconcacyc.png"> 
     <!--CSS de forma externa -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/style.css">
     <title>CACYC-Home</title>
 </head>
 
@@ -20,50 +21,51 @@
 		<nav id="nav">
 	
 		
-		<nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-			<a href="index.html"><img id=logoheader src="Media\img\logo.jpg" alt="Logo CACYC"> </a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-		  
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-			  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-				  <a class="nav-link",class=nav-item href="index.html">Home<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="pages\aboutus.html">About Us</a>
-				</li>
-				<li class="dropdown",class="nav-item">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="pages\servicios.html">Servicios
-					<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-					  <li><a href="#">Servicio 1-1</a></li>
-					  <li><a href="#">Servicio 1-2</a></li>
-					  <li><a href="#">Servicio 1-3</a></li>
-					</ul>
-					
-			  </li>
-				<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="pages\cursos.html">Cursos</a>
-						<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-						  <li><a href="#">Curso 1-1</a></li>
-						  <li><a href="#">Curso 1-2</a></li>
-						  <li><a href="#">Curso 1-3</a></li>
+			<nav class="navbar navbar-expand-lg bg-light">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="./index.html" width="200px" height="200px"><img src="./Media/img/logo.jpg" alt=""></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active" href="pages\aboutus.html">About us</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link active dropdown-toggle" href="pages\servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Servicios
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item active" href="#">Servicios 1</a></li>
+						  <li><a class="dropdown-item active" href="#">Servicios 2</a></li>
+					  <li><a class="dropdown-item active" href="#">Servicios 3</a></li>
+						 </ul>
+					  </li>
+				  <li class="nav-item dropdown">
+						<a class="nav-link active dropdown-toggle" href="pages\cursos.html" id="navbarDropdown" 	role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Cursos
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item active" href="pages\cursos.html">Cursos 1</a></li>
+						  <li><a class="dropdown-item active" href="pages\cursos.html">Cursos 2</a></li>
+					  <li><a class="dropdown-item active" href="#">Cursos 3</a></li>
 						</ul>
-				  </li>
-				<li class="nav-item">
-					<a class="nav-link" href="pages\contacto.html">Contacto</a>
-				</li>
-				
-			  </ul>
-			  <form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-			  </form>
-			</div>
-		  </nav>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link active" href="pages\contacto.html">Contacto</a>
+					  </li>
+					</ul>
+					<form class="d-flex" role="search">
+					  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					  <button class="btn btn-outline-success" type="submit">Buscar</button>
+					</form>
+				  </div>
+				</div>
+			  </nav>
 		
 	</header>
     	<!-- fila de información de mi sitio -->
@@ -88,7 +90,6 @@
 
     </section>
 
-</body>
 <!-- Footer -->
 <footer id="foot">
     <form action="" method="GET" enctype="multipart/form-data">
@@ -112,6 +113,12 @@
 </footer>
 
 
-<script src="js/bootstrap.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+
+
+
 
 </html>
