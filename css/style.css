@@ -316,19 +316,21 @@ input[type=text], select, textarea {
   }
 
   /* animacion */
+
+  /* elemento de animacion */
+  #nav {
+    background-color: skyblue;
+    animation-name: nav;
+    animation-duration: 4s;
+   
+  }
+
   @keyframes nav {
     From  {background-color: lightcoral;}
     to {background-color: skyblue;}
     
   }
   
-  /* elemento de animacion */
-  #nav {
-    background-color: red;
-    animation-name: nav;
-    animation-duration: 4s;
-   
-  }
 
   .dropdown-item.active,
 .dropdown-item:active {
