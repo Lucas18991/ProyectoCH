@@ -298,19 +298,20 @@ h4 {
 }
 .dropdown-item.active,
 .dropdown-item:active,
-.btn-outline-primary.dropdown-toggle  {
+x  {
   color: #fff;
   text-decoration: none;
   background-color: rgba(232, 234, 236, 0.9333333333);
 }
 nav-item dropdown
 .dropdown-item:hover
-.nav-item:hover {
+.nav-item:hover
+ {
   color: rgb(86, 104, 111);
   text-decoration: none;
   background-color: rgba(12, 13, 13, 0.5960784314);
 }
-
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{background-color: rgb(60, 97, 93) !important;}
 
 #imgartc {
   display: flexbox;
