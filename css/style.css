@@ -297,17 +297,20 @@ h4 {
   }
 }
 .dropdown-item.active,
-.dropdown-item:active {
+.dropdown-item:active,
+.btn-outline-primary.dropdown-toggle  {
   color: #fff;
   text-decoration: none;
   background-color: rgba(232, 234, 236, 0.9333333333);
 }
-
-.dropdown-item:hover {
-  color: #fff;
+nav-item dropdown
+.dropdown-item:hover
+.nav-item:hover {
+  color: rgb(86, 104, 111);
   text-decoration: none;
   background-color: rgba(12, 13, 13, 0.5960784314);
 }
+
 
 #imgartc {
   display: flexbox;
@@ -321,23 +324,3 @@ h4 {
   justify-items: center;
 }
 
-#imgcursos {
-  width: 68%;
-  display: flexbox;
-  justify-self: center;
-}
-
-#mail {
-  width: 10px;
-  height: 10px;
-}
-
-#whats {
-  width: 10px;
-  height: 10px;
-}
-
-#whats {
-  width: 10px;
-  height: 10px;
-}/*# sourceMappingURL=style.css.map */
