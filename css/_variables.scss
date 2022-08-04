@@ -6,13 +6,16 @@ $dropdownfondo: #e8eaecee;
 
 
 $body-estilos:(
-    colores: rgb(195, 200, 253),
-    img: url('../Media/img/0a8f440cf493f748894b29b9fa59b860.gif'),
-    back-repeat: no-repeat,
-    back-size:cover ,
-    back-attach:scroll,
-    disp-shown: flexbox
+ 
+        fontss:'Quicksand' sans-serif,
+        texts:center,
+        lines: 1.5em,
+       background0: #3d3e3ea8,
+      background2: -moz-linear-gradient(-45deg, #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%),
+      background3: -webkit-linear-gradient(-45deg, #3d3e3ea8 0%,#4d4c4cd7 25%,#515150c1 46%,#575555b0 54%,#5958588e 75%,#6158588e 100%),
+      background4: linear-gradient(135deg, #3d3e3ea8 0%,#4d4c4cd7 25%,#515150c1 46%,#575555b0 54%,#5958588e 75%,#6158588e 100%),
+      filters2: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636ee', endColorstr='#4d4b4bce',GradientType=1 ),
+      
 
 )
 
-s

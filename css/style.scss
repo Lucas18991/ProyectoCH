@@ -1,22 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+*, ::before, ::after { box-sizing: border-box; }
 
-p {
-    line-height: 24px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-}
-
-body {
-    background-color: map-get($body-estilos, colores );
-    background-image: map-get($body-estilos, img );
-    background-repeat: map-get($body-estilos, back-repeat );
-    background-size:map-get($body-estilos, back-size );
-    background-attachment:map-get($body-estilos, back-attach );
-    display: map-get($body-estilos, disp-shown );
-
-}
-
+//SCSS//
 @mixin paddAndBorder($padd,$bord) {
 
   padding:$padd;
@@ -24,38 +11,119 @@ body {
     
 }
 
+
+
+
+/* CSS HTML Servicios */
+
+/* CSS HTML AboutUs */
+
+
+/* CSS HTML General */
+
+
+
+body {
+    font-family: map-get($body-estilos, fontss );
+    text-align: map-get($body-estilos, texts );
+    line-height: map-get($body-estilos, lines );
+    background:map-get($body-estilos, background0 );
+    background:map-get($body-estilos, background2 );
+    background:map-get($body-estilos, background3 );
+    background:map-get($body-estilos, background4 );
+    filter:map-get($body-estilos, filters2 );
+}
+footer{
+  font-family:'Quicksand', sans-serif;
+  text-align:center;
+  line-height:1.5em;
+ background: #69d2e7;
+background: -moz-linear-gradient(-45deg, #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
+background: -webkit-linear-gradient(-45deg,  #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
+background: linear-gradient(135deg, #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636ee', endColorstr='#4d4b4bce',GradientType=1 );
+}
+
+#RedS{
+text-decoration: solid white;
+
+}
+p {
+  line-height: 24px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+/* Menu de navegacion*/
+nav {
+  width: 100%;
+  background-color: lightblue;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#logoheader {
+  display: inline-block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+
+.nav-item:hover a {
+  color: lightblue;
+}
+
+
+/* CSS HTML Contacto */
 /* CSS para inputs, select y textarea */
 input[type=text], select, textarea {
-    width: 100%; 
-    @include paddAndBorder(12px,1px solid $inputcolor);
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-  }
-  
-  /* Style para el boton de imput con colores y borders */
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    @include paddAndBorder(12px 20px,none);
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* dar color verde mas oscuro cuando se pone el mouse encima*/
-  input[type=submit]:hover {
-    background-color: $hoverinputcont;
-  }
-  
-  /* color del fondo*/
-  .container {
-    border-radius: 5px;
-    background-color: $fondoformulario;
-    @include paddAndBorder(20px);
- 
-  }
+  width: 100%; 
+  @include paddAndBorder(12px,1px solid $inputcolor);
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+/* Style para el boton de imput con colores y borders */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  @include paddAndBorder(12px 20px,none);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* dar color verde mas oscuro cuando se pone el mouse encima*/
+input[type=submit]:hover {
+  background-color: $hoverinputcont;
+}
+
+/* color del fondo*/
+.container {
+  border-radius: 5px;
+  background-color: $fondoformulario;
+  @include paddAndBorder(5px,none);
+
+}
 
   #imgcontacto{
 
@@ -64,45 +132,9 @@ input[type=text], select, textarea {
 
   #head{position: sticky;}
 
-/* Menu de navegacion*/
-  nav {
-    width: 100%;
-    background-color: lightblue;
-    padding-left: 30px;
-    padding-right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  #logoheader {
-    display: inline-block;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-item a {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: white;
-    justify-content: center;
-  }
-  
-  .nav-item:hover {
-    background-color: white;
-  }
-  
-  .nav-item:hover a {
-    color: lightblue;
-  }
 
 
-
+/* CSS HTML index */
 
   .h1cls{
     font-style: italic;
@@ -137,15 +169,15 @@ input[type=text], select, textarea {
 
 
 .container {
-  position: relative;
-  width: 50%;
+  height: auto;
+  width: auto;
 }
 
 #capacitaciongrua{
 
   width:  800px  ;
   height: 500px ;
-  display: block;
+  display: flex;
   height: auto;
 }
 
@@ -162,9 +194,7 @@ input[type=text], select, textarea {
   background-color: lightblue;
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
+
 
 .text {
   color: black;
@@ -180,7 +210,7 @@ input[type=text], select, textarea {
 
 #sectpadr
 {
-  display: flexbox;
+  display: flex;
 
 }
 
@@ -230,9 +260,9 @@ input[type=text], select, textarea {
   #sectpadr {
     display: grid;
     grid-template-columns: 100%  ;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 30% 10% 20%;
     column-gap: 30px;
-    row-gap: 20px;
+    row-gap: 30px;
     grid-template-areas: "header" "desc1 " "desc2 " "desc3" "footer";
   }
   
@@ -242,7 +272,7 @@ input[type=text], select, textarea {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     column-gap: 10px;
-    row-gap: 10px;
+    row-gap: 20px;
     justify-items: stretch;
     align-items: stretch;
   
@@ -350,14 +380,26 @@ input[type=text], select, textarea {
   background-color: #0c0d0d98;
 }
 
+#mail{
+  width: 10px;
+  height: 10px;
+  }
+  
+  #whats{
+  
+    width: 10px;
+    height: 10px;
+  }
+  
+/* CSS HTML Cursos */
 #imgartc{
-  display: flexbox;
+  display: flex;
   justify-content: center;
 justify-items: center;
 
 }
 #sectimg{
-display: flexbox;
+display: flex;
 justify-content: center;
 justify-items:center;
 
@@ -366,24 +408,9 @@ justify-items:center;
 
 #imgcursos{
 width: 68%;
-display: flexbox;
+display: flex;
 justify-self: center;
 
 }
 
-#mail{
-width: 10px;
-height: 10px;
-}
 
-#whats{
-
-  width: 10px;
-  height: 10px;
-}
-
-#whats{
-
-    width: 10px;
-    height: 10px;
-  }
