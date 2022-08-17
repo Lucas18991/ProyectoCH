@@ -15,7 +15,22 @@
 
 
 /* CSS HTML Servicios */
+#imgservic
+{
+  width: 70%;
+  height: 70;
 
+}
+#tableserv{
+  font-family:'Quicksand', sans-serif;
+  text-align:center;
+  line-height:1.5em;
+ background: #3d3e3ea8;
+background: -moz-linear-gradient(-45deg, #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
+background: -webkit-linear-gradient(-45deg,  #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
+background: linear-gradient(135deg, #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636ee', endColorstr='#4d4b4bce',GradientType=1 );
+}
 /* CSS HTML AboutUs */
 
 
@@ -37,11 +52,36 @@ footer{
   font-family:'Quicksand', sans-serif;
   text-align:center;
   line-height:1.5em;
+ background: #3d3e3ea8;
+background: -moz-linear-gradient(-45deg, #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
+background: -webkit-linear-gradient(-45deg,  #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
+background: linear-gradient(135deg, #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636ee', endColorstr='#4d4b4bce',GradientType=1 );
+}
+
+#ulnav{
+  justify-content: center;
+
+}
+
+#footdiv{
+  font-family:'Quicksand', sans-serif;
+  text-align:center;
+  line-height:1.5em;
  background: #69d2e7;
 background: -moz-linear-gradient(-45deg, #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
 background: -webkit-linear-gradient(-45deg,  #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
 background: linear-gradient(135deg, #3d3e3ea8 0%, #4d4c4cd7 25%, #515150c1 46%, #575555b0 54%, #5958588e 75%, #6158588e 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636ee', endColorstr='#4d4b4bce',GradientType=1 );
+
+
+}
+
+
+.navbarstrpad{
+padding-left: 15px;
+padding-right: 15px;
+font-weight: bold
 }
 
 #RedS{
@@ -139,7 +179,7 @@ input[type=submit]:hover {
   .h1cls{
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: larger;
+    font-size:xx-large;
     
   }
 
@@ -357,11 +397,11 @@ input[type=submit]:hover {
     background-color: $navcolor;
     animation-name: nav;
     animation-duration: 4s;
-   
+   animation-iteration-count: infinite;
   }
 
   @keyframes nav {
-    From  {background-color: lightcoral;}
+    From  {background-color: lightgrey;}
     to {background-color: $navcolor;}
     
   }
@@ -380,10 +420,7 @@ input[type=submit]:hover {
   background-color: #0c0d0d98;
 }
 
-#mail{
-  width: 10px;
-  height: 10px;
-  }
+
   
   #whats{
   
@@ -412,5 +449,11 @@ display: flex;
 justify-self: center;
 
 }
+.tableTRD{
+  background-color:grey ;
+}
 
+#tdcap{
+  font-weight: bolder;
 
+}
