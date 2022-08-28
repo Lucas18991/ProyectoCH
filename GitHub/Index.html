@@ -4,73 +4,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Centro Argentino de capacitacion y certificacion para operadores de gruas">
+	<meta name="keywords" content="CENTRO,ARGENTINO,CAPACITACION,CERTIFICACION,GRUAS,CACYC,OPERADORES">
     <link rel="shortcut icon" href="Media\img\faviconcacyc.png"> 
+
     <!--CSS de forma externa -->
-    <link rel="stylesheet" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
     <title>CACYC-Home</title>
 </head>
 
 <!-- Body del sitio -->
+
 <body id="body">
 	<!-- Logo + nav --> 
-	<header>
-        <h1>CACYC--Centro Argentino de Capacitacion y Certificacion</h1>
-		<nav>
-			<a href="index.html"><img id=logoheader src="Media\img\logo.jpg" alt="Logo CACYC"> </a>
-			<ul class="nav-links">
-				<li class="nav-item"><a href="index.html">Home</a></li>
-				<li class="nav-item"><a href="pages\aboutus.html">About Us</a></li>
-				<li class="nav-item"><a href="pages\servicios.html">Servicios</a></li>
-				<li class="nav-item"><a href="pages\cursos.html">Cursos</a></li>
-				<li class="nav-item"><a href="pages\contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
+	<header id="head">
+        <h1 class="h1cls">CACYC--Centro Argentino de Capacitacion y Certificacion</h1>
+
+		<!-- Se agrega Nav para mantener animacion en los costados del menu de -->
+		<nav id="nav">
+	
+		
+			<nav class="navbar navbar-expand-lg bg-light">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="./index.html" width="200px" height="200px"><img src="./Media/img/logo.jpg" alt="Logo CACYC"></a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav justify-content-center col-lg col-sm col-md">
+					  <li class="nav-item navbarstrpad">
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					  </li>
+					  <li class="nav-item navbarstrpad">
+						<a class="nav-link active" href="./pages/aboutus.html">About us</a>
+					  </li>
+					  <li class="nav-item navbarstrpad">
+						<a class="nav-link active" href="./pages/servicios.html">Servicios</a>
+					  </li>
+				  <li class="nav-item dropdown navbarstrpad">
+						<a class="nav-link active dropdown-toggle" href="./pages/cursos.html" id="navbarDropdown" 	role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Cursos
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item active " href="./pages/cursos.html">Informacion General Cursos</a></li>
+						  <li><a class="dropdown-item active " href="./pages/cursosEslinaje.html">Ejemplo Cursos Eslinaje</a></li>
+					  <li><a class="dropdown-item active " href="./pages/cursosGruasMoviles.html">Ejemplo Curso Gruas Moviles</a></li>
+						</ul>
+					  </li>
+					  </li>
+					  <li class="nav-item navbarstrpad">
+						<a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+					  </li>
+					</ul>
+					<form class="d-flex" role="search">
+					  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+					  <button class="btn btn-outline-success" type="submit">Buscar</button>
+					</form>
+				  </div>
+				</div>
+			  </nav>
+		
 	</header>
     	<!-- fila de información de mi sitio -->
-	<section>
-		<article id="desc">
-			<ol>
-				<li>Realizamos las siguientes capacitaciones</li>
-				<li>Realizamos los siguientes cursos</li>
+	
+		<article id="desc1" class="d-flex justify-content-center col-lg col-sm col-md ">
+			<h2  class="text-white" class="h2cls">					
+Centro Argentino de Capacitación y Certificación S.A.
+			</h2>
+			<br>
+			<br>
+		</article>	
 				
-			</ol>
-			<h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo optio dolore eius dolor, fuga, veniam voluptatem et suscipit quas facere tempora incidunt cupiditate officia accusantium maiores quam officiis quisquam eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nostrum officia enim laudantium, vitae fugiat, ducimus ab debitis itaque, alias optio voluptate? Laborum nemo odio illo magni illum iure aut! Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Nostrum doloremque, aperiam accusamus. Quod, consequatur! Nam distinctio laborum eius officiis, explicabo ipsa, nostrum at aperiam adipisci delectus iusto deserunt repellendus, harum. </h2>
-			<h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo optio dolore eius dolor, fuga, veniam voluptatem et suscipit quas facere tempora incidunt cupiditate officia accusantium maiores quam officiis quisquam eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nostrum officia enim laudantium, vitae fugiat, ducimus ab debitis itaque, alias optio voluptate? Laborum nemo odio illo magni illum iure aut! Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Nostrum doloremque, aperiam accusamus. Quod, consequatur! Nam distinctio laborum eius officiis, explicabo ipsa, nostrum at aperiam adipisci delectus iusto deserunt repellendus, harum. </h2>
-			<h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo optio dolore eius dolor, fuga, veniam voluptatem et suscipit quas facere tempora incidunt cupiditate officia accusantium maiores quam officiis quisquam eum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nostrum officia enim laudantium, vitae fugiat, ducimus ab debitis itaque, alias optio voluptate? Laborum nemo odio illo magni illum iure aut! Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Nostrum doloremque, aperiam accusamus. Quod, consequatur! Nam distinctio laborum eius officiis, explicabo ipsa, nostrum at aperiam adipisci delectus iusto deserunt repellendus, harum. </h2>
-
-
-			
-				
-				<div class="container">
-					<img id="capacitaciongrua" src="Media/img/capacitaciongrua.jpg" alt="Capacitaciones Gruas">
-					<div class="overlay">
-					  <div class="text">CACYC, capacitaciones profesionales</div>
-					</div>
+		<article class="text-white" id="desc2" class="d-flex justify-content-center col-lg col-sm col-md">
+<br>
+			<h3 class="text-white" class="h3cls">Las empresas contratistas de obras industriales, viales y de energía pueden ahora contar con el respaldo de una organización que evalúe y certifique los equipos de obra y capacite adecuadamente al personal que opera esos equipos.
+				CACYC S.A. certifica equipos de izaje, industriales y viales y dicta cursos de capacitación para el personal brindándole la seguridad y confianza que su empresa necesita en obra.
+				 </h3>
+				 <br>
+				 <br>
+				<h4 class="text-white" class="h4cls">				LA CAPACITACION NO ES UN GASTO
+					INVIERTA EN LA CAPACITACION PROFESIONAL DEL OPERADOR DE GRUA </h4>
+		</article>
+		<article id="desc3" class="d-flex justify-content-center col-lg col-sm col-md">
+				<div class="d-flex justify-content-center">
+					<img id="capacitaciongrua" class="d-flex justify-content-center " src="Media/img/capacitaciongrua.jpg" alt="Capacitaciones Gruas" class="col-lg col-sm col-md">
+					
 				  </div>
         </article>
 
-    </section>
+    
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+	<!-- Seccion: Redes Sociales -->
+	<section  class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+	  <div class="me-5 d-none d-lg-block">
+		<span class="text-white" id="RedS">Unanse a nuestras Redes sociales:</span>
+	  </div>
+
+	  <div>
+		
+		<a class="text-white" href="https://www.linkedin.com/in/cacyc-sa-697080126/?originalSubdomain=ar" class="me-4 text-reset">Linkedin
+		  <i class="fab fa-linkedin"></i>
+		</a>
+
+	  </div>
+	</section>
+
+  
+	<!-- seccion Links  -->
+	<section  class="">
+	  <div id="footdiv" class="container text-center text-md-start mt-5">
+		<!-- fila-->
+		<div   class="row mt-3">
+		  <!-- columna-->
+		  <div   class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+			<!-- contenido -->
+			<h6 class="text-uppercase fw-bold mb-4 text-white">
+			  <i class="fas fa-gem me-3"></i>CACYS S.A.
+			</h6>
+			<p class="text-white " >
+			  CACYC S.A. es una empresa Argentina que se dedica a brindar servicios y cursos para operadores en el rubro de construcción
+			</p>
+		  </div>
+		  <!-- Columna -->
+  
+		  <!-- Columna -->
+		  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+			<!-- Links -->
+			<h6 class="text-uppercase fw-bold mb-4 text-white">
+			  Navegacion
+			</h6>
+			<p>
+				<a class="text-white" href="index.html" >Home</a>
+			  </p>
+			<p>
+			  <a class="text-white" href="/pages/aboutus.html" >Nosotros</a>
+			</p>
+			<p>
+			  <a class="text-white" href="/pages/cursos.html" >Cursos</a>
+			</p>
+			<p>
+			  <a class="text-white" href="/pages/servicios.html" >Servicios</a>
+			</p>
+			<p>
+			  <a class="text-white" href="/pages/contacto.html" >Contacto</a>
+			</p>
+		  </div>
+  
+		  <!-- Columna-->
+		  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+			<!-- Documentacion Relevante -->
+			<h6 class="text-white text-uppercase fw-bold mb-4">
+			  Documentacion
+			</h6>
+			<p>
+			  <a href="https://docs.google.com/spreadsheets/d/1_F-3xaRQ300jOTxg1rwcroIuAf3MQaoX82ii9GhVTik/edit?usp=sharing" target="_blank" class=" text-white">Precios</a>
+			</p>
+			<p>
+			  <a href="https://docs.google.com/document/d/1RWOCmtJVj1Uqi1uvPM2xAN-21DuiR3m5IlRiuSBijss/edit?usp=sharing" target="_blank" class="text-white">Normativas</a>
+			</p>
+			<p>
+			  <a href="https://docs.google.com/document/d/1FbvbJJuGkGFqSEJkghmE9kU2Rjop3jGD-vvlgWh7dDU/edit?usp=sharing" target="_blank" class="text-white">Equipos</a>
+			</p>
+			<p>
+			  <a href="https://docs.bvsalud.org/biblioref/2019/03/981170/manual-decap-version-12.pdf" target="_blank" class="text-white ">Ayuda</a>
+			</p>
+			<p>
+				<a href="https://docs.google.com/document/d/1S9JoPu2eXu8xgKy-gtnWYfu0WlNOR0WzgAYj0hmtogc/edit?usp=sharing" target="_blank" class="text-white ">Clientes</a>
+			  </p>
+		  </div>
+		  
+  
+		  <!-- Columna-->
+		  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+			<!-- Links -->
+			<h6 class="text-white text-uppercase fw-bold mb-4">Contacto</h6>
+			<p class="text-white "><i class="text-white fas fa-home me-2"></i>Gurruchaga 2163, 1425 - CABA - Argentina</p>
+			<p class="text-white">
+				<a id="mail" href="mailto:ventas@cacyc.com" target="_blank" ><img src="../Media/img/icons8-mail-90.png" alt="Numero CACYC" width="50px" height="50px"></a>
+			  <i class="fas fa-envelope me-3"></i>
+			  ventas@cacyc.com
+			</p>
+			<p class="text-white fas fa-print me-3" >Tel.: 0800-555-1245</p>
+			<a id="whats" class="fas fa-print me-3" href="https://wa.me/+5491141471109" target="_blank" ><img src="../Media/img/whatsappCacyc.png" alt="Numero CACYC" width="50px" height="50px"></a>
+		  </div>
+		</div>
+	  </div>
+	</section>
+  
+	<div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+	  © 2022 CACYC SA
+	</div>
+  </footer>
+  <!-- Footer -->
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
-<!-- Footer -->
-<footer>
-    <form action="" method="GET" enctype="multipart/form-data">
-        <fieldset>
-            <legend>Suscribirse al Newsletter:</legend>
-
-            <label for="Newsletter">Mail</label>
-            <input type="email" placeholder="ejemplo@gmail.com">
-
-            <br>
-
-            <br>
-            <input type="submit" value="Suscribirse">
-        </fieldset>
-
-        <a href="#body">Volver al Inicio</a>
 
 
-    </form>
 
-</footer>
+
 </html>
